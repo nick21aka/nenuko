@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nenuko - Alimentos</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+  <div class="logo">Nenuko</div>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#" id="abrir-carrito-navbar">Carrito</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  </header>
+
+
+  <!-- SECCIÓN INICIO -->
+<section id="inicio">
+<div class="carrusel-container">
+  <div class="cta-sobre-carrusel">
+    <h2>¡Bienvenido a Nenuko!</h2>
+    <a href="https://wa.me/56983271623?text=Hola%20Nenuko%2C%20quiero%20hacer%20un%20pedido" 
+   class="boton-cta" target="_blank" rel="noopener">
+  Haz tu pedido por WhatsApp
+</a>
+
+  </div>
+
+  <div class="carrusel">
+    <img src="img/pancito.avif" alt="Imagen 1">
+    <img src="img/manjar.avif" alt="Imagen 2">
+  </div>
+
+  <button class="anterior" onclick="moverCarrusel(-1)">❮</button>
+  <button class="siguiente" onclick="moverCarrusel(1)">❯</button>
+</div>
+
+</section>
+
+  <!-- SECCIÓN CATÁLOGO -->
+  <section id="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="productos">
+      <!-- Aquí irán las tarjetas de productos -->
+      <div class="producto">
+        <img src="img/pan.jpeg" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'pan.jpeg')">Agregar al carrito</button>
+
+      </div>
+      <div class="producto">
+        <img src="img/dulce.avif" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/torta.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/dulcess.jpeg" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/torta.jpeg" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/manjar.avif" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/dulcess.jpeg" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div><div class="producto">
+        <img src="img/pancito.avif" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/dulce.avif" alt="Pan amasado">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500, 'img/dulcess.jpeg')">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/dulcess.jpeg" alt="Empanada de pino">
+          <p class="descripcion">Pan fresco artesanal, recién horneado cada mañana.</p>
+          <p class="precio">$1.890 el kilo</p>
+        <button onclick="agregarAlCarrito('Pan amasado', 500)">Agregar al carrito</button>
+
+      </div>
+      <!-- Puedes agregar más productos aquí -->
+    </div>
+  </section>
+  <!-- UBICACION -->
+  <section id="ubicacion">
+  <h2>📍 Ubicación del Local</h2>
+  <p>Nos encontramos en Valle Volcanes, Puerto Montt.</p>
+  <div class="mapa-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1073340528064!2d-72.9115521!3d-41.4585873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183b3b79e19ddf%3A0x1037426007d2bb54!2spanaderia%20y%20pasteleria%20de%20nenuko!5e0!3m2!1ses!2scl!4v1749003800325!5m2!1ses!2scl"
+ width="600" 
+ height="450" 
+ style="border:0;" 
+ allowfullscreen="" 
+ loading="lazy" 
+ referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </div>
+</section>
+
+
+  <!-- SECCIÓN CONTACTO -->
+<section id="contacto">
+  <h2>✉️ Contáctanos</h2>
+  <p>¿Tienes alguna consulta o pedido? Escríbenos y te responderemos pronto.</p>
+
+  <form id="form-contacto">
+    <div class="campo">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="campo">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="campo">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+
+<!-- Fondo oscuro detrás del carrito -->
+<div id="fondo-oscuro" class="fondo-oscuro oculto" onclick="cerrarCarrito()"></div>
+<!-- SECCIÓN CARRITO -->
+<div id="carrito-lateral" class="carrito-lateral oculto">
+  <div class="carrito-header">
+    <h3>🛒 Carrito (<span id="contador">0</span>)</h3>
+    <button id="cerrar-carrito" title="Cerrar">✖</button>
+  </div>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total: $<span id="total">0</span></strong></p>
+  <button id="btn-pagar" class="btn-pagar">Finalizar compra</button>
+</div>
+
+<!-- Ícono flotante del carrito (solo para celular) -->
+<button id="boton-carrito-flotante" class="boton-flotante">
+  🛒 <span id="contador-flotante">0</span>
+</button>
+83271623
+
+<a href="https://wa.me/56983271623?text=Hola%20Nenuko%2C%20quiero%20hacer%20un%20pedido"
+   class="boton-whatsapp"
+   target="_blank"
+   rel="noopener"
+   title="Haz tu pedido por WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icono-wsp">
+</a>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
