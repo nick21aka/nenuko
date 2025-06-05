@@ -129,8 +129,25 @@
 <section id="contacto">
   <h2>✉️ Contáctanos</h2>
   <p>¿Tienes alguna consulta o pedido? Escríbenos y te responderemos pronto.</p>
+  
+  <form action="https://formsubmit.co/nicosilvac21@gmail.com" method="POST">
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo" required>
+  <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+  <input type="text" name="_honey" style="display:none">
+  
+  
+  <!-- Campos ocultos opcionales -->
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde Nenuko">
+  <input type="hidden" name="_autoresponse" value="Gracias por escribir a Nenuko. Te responderemos pronto.">
+  <input type="hidden" name="_template" value="table">
 
-  <form id="form-contacto">
+  <button type="submit">Enviar mensaje</button>
+  <!-- Mensaje automático al usuario -->
+  <input type="hidden" name="_autoresponse" value="¡Gracias por escribir a Nenuko! Eres oficialmente un cliente VIP 🏅. Te enviaremos promociones especiales.">
+</form>
+
+  <!--<form id="form-contacto">
     <div class="campo">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
@@ -147,7 +164,7 @@
     </div>
 
     <button type="submit">Enviar mensaje</button>
-  </form>
+  </form>-->
 </section>
 
 
